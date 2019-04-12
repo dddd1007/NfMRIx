@@ -1,0 +1,10 @@
+{
+    "RepetitionTime": 2.0,
+    "TaskName": "freq-to-PE-on_simon",
+    "EchoTime": 0.030,
+    "FlipAngle": 90,
+    "PulseSequenceType": "%SiemensSeq%_ep2d_pace",
+    "Manufacturer": "Siemens",
+    "ManufacturersModelName": "TrioTim",
+    "MagneticFieldStrength": 3
+  }

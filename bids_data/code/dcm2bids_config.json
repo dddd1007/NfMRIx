@@ -1,0 +1,19 @@
+{
+    "descriptions": [
+        {
+        "dataType": "func",
+        "modalityLabel": "bold",
+        "customLabels": "task-simon",
+        "criteria": {
+            "SeriesDescription": "ep2d_pace_420v"
+            }
+        },
+        {
+        "dataType": "anat",
+        "modalityLabel": "T1w",
+        "criteria": {
+            "SeriesDescription": "t1_mpr_sag_p2_iso"
+            }
+        }
+    ]
+}

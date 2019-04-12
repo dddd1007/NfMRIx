@@ -1,0 +1,25 @@
+INFO:dcm2bids.dcm2bids:--- dcm2bids start ---
+INFO:dcm2bids.dcm2bids:OS:version: Linux-4.4.0-18362-Microsoft-x86_64-with-debian-buster-sid
+INFO:dcm2bids.dcm2bids:python:version: 3.7.3 (default, Mar 27 2019, 22:11:17) [GCC 7.3.0]
+INFO:dcm2bids.dcm2bids:dcm2bids:version: 2.1.4
+INFO:dcm2bids.dcm2bids:dcm2niix:version: v1.0.20181114
+INFO:dcm2bids.dcm2bids:participant: sub-01
+INFO:dcm2bids.dcm2bids:session: 
+INFO:dcm2bids.dcm2bids:config: /mnt/d/fmri_analysis/new_fMRI_workflow/bids_data/code/dcm2bids_config.json
+INFO:dcm2bids.dcm2bids:BIDS directory: /mnt/d/fmri_analysis/new_fMRI_workflow/bids_data
+INFO:dcm2bids.utils:Running dcm2niix -b y -ba y -z y -f '%3s_%f_%p_%t' -o /mnt/d/fmri_analysis/new_fMRI_workflow/bids_data/tmp_dcm2bids/sub-01 sourcedata
+INFO:dcm2bids.dcm2niix:Check log file for dcm2niix output
+INFO:dcm2bids.sidecar:Sidecars pairing:
+INFO:dcm2bids.sidecar:_task-fre-pe_bold  <-  003_sourcedata_ep2d_pace_420v_20190321082513
+INFO:dcm2bids.sidecar:_task-fre-pe_bold  <-  004_sourcedata_ep2d_pace_420v_20190321082513
+INFO:dcm2bids.sidecar:_task-fre-pe_bold  <-  005_sourcedata_ep2d_pace_420v_20190321082513
+INFO:dcm2bids.sidecar:_task-fre-pe_bold  <-  006_sourcedata_ep2d_pace_420v_20190321082513
+INFO:dcm2bids.sidecar:_task-fre-pe_bold  <-  007_sourcedata_ep2d_pace_420v_20190321082513
+INFO:dcm2bids.sidecar:_task-fre-pe_bold  <-  008_sourcedata_ep2d_pace_420v_20190321082513
+INFO:dcm2bids.sidecar:_T1w  <-  009_sourcedata_t1_mpr_sag_p2_iso_20190321082513
+INFO:dcm2bids.sidecar:sub-01/func/sub-01_task-fre-pe_bold has 6 runs
+INFO:dcm2bids.sidecar:Adding 'run' information to the acquisition
+INFO:dcm2bids.dcm2bids:moving acquisitions into BIDS folder
+WARNING:dcm2bids.version:Your using dcm2niix version v1.0.20181114
+WARNING:dcm2bids.version:A new version exists : v1.0.20190410
+WARNING:dcm2bids.version:Check https://github.com/rordenlab/dcm2niix

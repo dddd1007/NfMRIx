@@ -1,2 +1,6 @@
 
 raw_data/
+
+bids_data/sourcedata/
+
+*.nii.gz
