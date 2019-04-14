@@ -4,3 +4,14 @@ raw_data/
 bids_data/sourcedata/
 
 *.nii.gz
+
+*mnr*
+tools/freesurfer\.txt
+
+preprocessed_data/freesurfer/fsaverage/mri/
+
+preprocessed_data/freesurfer/fsaverage/mri\.2mm/
+
+preprocessed_data/freesurfer/sub-01/mri/
+
+preprocessed_data/freesurfer/fsaverage5/mri/
