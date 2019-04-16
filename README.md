@@ -35,7 +35,7 @@ BIDS 是将传统的 DICOM 转换为 Niftis 格式后，重新按照一定的文
 
 ### Usage
 
-该工具的使用逻辑是，首先在导出文件夹中使用 dcm2bids_scaffold 生成符合 BIDS 协议的基本文件夹，然后使用 dcm2bids_helper 生成示例 nii 文件。按照生成的文件与实验设计，在 code 文件夹中编写 dcm2bids_config.json 配置文件，遵循规则 https://cbedetti.github.io/Dcm2Bids/tutorial/#building-the-configuration-file。随后便可对所有被试进行批量转换。
+该工具的使用逻辑是，首先在导出文件夹中使用 dcm2bids_scaffold 生成符合 BIDS 协议的基本文件夹，然后使用 dcm2bids_helper 生成示例 nii 文件。按照生成的文件与实验设计，在 code 文件夹中编写 dcm2bids_config.json 配置文件，遵循规则 https://cbedetti.github.io/Dcm2Bids/tutorial/#building-the-configuration-file 。随后便可对所有被试进行批量转换。
 
 ## Step 2 数据预处理
 
