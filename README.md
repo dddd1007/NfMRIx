@@ -1,8 +1,6 @@
 # The new fMRI analysis workflow by xIA
 
-[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)]
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)][![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
 
 本 repo 尝试使用新的工作流程来对 fMRI 数据进行分析。尝试使用新的标准（如 BIDS ）或分析工具（如 fMRIprep ）来完善现有的工作流程，提高研究的复用性。
 
