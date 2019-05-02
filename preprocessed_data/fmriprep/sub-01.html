@@ -98,40 +98,238 @@ div#boilerplate pre {
 			<li>Output voxel size: 1mm x 1mm x 1mm</li>
 			<li>Discarded images: 0</li>
 
-		</ul>    </div>
+		</ul><h3 class="elem-title">Brain mask and brain tissue segmentation of the T1w</h3><p class="elem-desc">This panel shows the template T1-weighted image (if several T1w images were found), with contours delineating the detected brain mask and brain tissue segmentations.<p><br />                        <div class="elem-image">
+                        <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_seg_brainmask.svg">filename:sub-01/figures/sub-01_seg_brainmask.svg</object>
+                        </div>
+                        <div class="elem-filename">
+                            Get figure file: <a href="./sub-01/figures/sub-01_seg_brainmask.svg" target="_blank">sub-01/figures/sub-01_seg_brainmask.svg</a>
+                        </div>
+<h3 class="elem-title">T1 to MNI registration</h3><p class="elem-desc">Nonlinear mapping of the T1w image into MNI space. Hover on the panel with the mouse to transition between both spaces.<p><br />                        <div class="elem-image">
+                        <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_t1_2_mni.svg">filename:sub-01/figures/sub-01_t1_2_mni.svg</object>
+                        </div>
+                        <div class="elem-filename">
+                            Get figure file: <a href="./sub-01/figures/sub-01_t1_2_mni.svg" target="_blank">sub-01/figures/sub-01_t1_2_mni.svg</a>
+                        </div>
+<h3 class="elem-title">Surface reconstruction</h3><p class="elem-desc">Surfaces (white and pial) reconstructed with FreeSurfer (<code>recon-all</code>) overlaid on the participant's T1w template.<p><br />                        <div class="elem-image">
+                        <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_reconall.svg">filename:sub-01/figures/sub-01_reconall.svg</object>
+                        </div>
+                        <div class="elem-filename">
+                            Get figure file: <a href="./sub-01/figures/sub-01_reconall.svg" target="_blank">sub-01/figures/sub-01_reconall.svg</a>
+                        </div>
+    </div>
     <div id="Functional">
     <h1 class="sub-report-title">Functional</h1>
             <div id="task-simon_run-01">
                 <h2 class="run-title">Reports for  Task: simon Run: 01</h2>
-<h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
-			<p class="elem-desc">The qform has been copied from sform.</p>            </div>
+<h3 class="elem-title">Summary</h3>
+		<ul class="elem-desc">
+			<li>Repetition time (TR): 2s</li>
+			<li>Phase-encoding (PE) direction: Anterior-Posterior</li>
+			<li>Slice timing correction: Applied</li>
+			<li>Susceptibility distortion correction: None</li>
+			<li>Registration: FreeSurfer <code>bbregister</code> (boundary-based registration, BBR) - 6 dof</li>
+			<li>Functional series resampled to spaces: fsaverage5, template</li>
+			<li>Confounds collected: csf, white_matter, global_signal, std_dvars, dvars, framewise_displacement, t_comp_cor_00, t_comp_cor_01, t_comp_cor_02, t_comp_cor_03, t_comp_cor_04, t_comp_cor_05, a_comp_cor_00, a_comp_cor_01, a_comp_cor_02, a_comp_cor_03, a_comp_cor_04, a_comp_cor_05, cosine00, cosine01, cosine02, cosine03, cosine04, cosine05, cosine06, cosine07, cosine08, cosine09, cosine10, non_steady_state_outlier00, non_steady_state_outlier01, non_steady_state_outlier02, trans_x, trans_y, trans_z, rot_x, rot_y, rot_z</li>
+		</ul><h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
+			<p class="elem-desc">The qform has been copied from sform.</p><h3 class="elem-title">ROIs in BOLD space</h3><p class="elem-desc">Brain mask calculated on the BOLD signal (red contour), along with the masks used for a/tCompCor.<br />The aCompCor mask (magenta contour) is a conservative CSF and white-matter mask for extracting physiological and movement confounds. <br />The fCompCor mask (blue contour) contains the top 5% most variable voxels within a heavily-eroded brain-mask.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-01_rois.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-01_rois.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-01_rois.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-01_rois.svg</a>
+                            </div>
+<h3 class="elem-title">EPI to T1 registration</h3><p class="elem-desc"><code>bbregister</code> was used to generate transformations from EPI-space to T1w-space. Note that Nearest Neighbor interpolation is used in the reportlets in order to highlight potential spin-history and other artifacts, whereas final images are resampled using Lanczos interpolation.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-01_bbregister.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-01_bbregister.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-01_bbregister.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-01_bbregister.svg</a>
+                            </div>
+<h3 class="elem-title">BOLD Summary</h3><p class="elem-desc">Summary statistics are plotted, which may reveal trends or artifacts in the BOLD data. Global signals calculated within the whole-brain (GS), within the white-matter (WM) and within cerebro-spinal fluid (CSF) show the mean BOLD signal in their corresponding masks. DVARS and FD show the standardized DVARS and framewise-displacement measures for each time point.<br />A carpet plot shows the time series for all voxels within the brain mask. Voxels are grouped into cortical (blue), and subcortical (orange) gray matter, cerebellum (green) and white matter and CSF (red), indicated by the color map on the left-hand side.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-01_carpetplot.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-01_carpetplot.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-01_carpetplot.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-01_carpetplot.svg</a>
+                            </div>
+            </div>
             <div id="task-simon_run-02">
                 <h2 class="run-title">Reports for  Task: simon Run: 02</h2>
-<h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
-			<p class="elem-desc">The qform has been copied from sform.</p>            </div>
+<h3 class="elem-title">Summary</h3>
+		<ul class="elem-desc">
+			<li>Repetition time (TR): 2s</li>
+			<li>Phase-encoding (PE) direction: Anterior-Posterior</li>
+			<li>Slice timing correction: Applied</li>
+			<li>Susceptibility distortion correction: None</li>
+			<li>Registration: FreeSurfer <code>bbregister</code> (boundary-based registration, BBR) - 6 dof</li>
+			<li>Functional series resampled to spaces: fsaverage5, template</li>
+			<li>Confounds collected: csf, white_matter, global_signal, std_dvars, dvars, framewise_displacement, t_comp_cor_00, t_comp_cor_01, t_comp_cor_02, t_comp_cor_03, t_comp_cor_04, t_comp_cor_05, a_comp_cor_00, a_comp_cor_01, a_comp_cor_02, a_comp_cor_03, a_comp_cor_04, a_comp_cor_05, cosine00, cosine01, cosine02, cosine03, cosine04, cosine05, cosine06, cosine07, cosine08, cosine09, cosine10, cosine11, non_steady_state_outlier00, non_steady_state_outlier01, trans_x, trans_y, trans_z, rot_x, rot_y, rot_z</li>
+		</ul><h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
+			<p class="elem-desc">The qform has been copied from sform.</p><h3 class="elem-title">ROIs in BOLD space</h3><p class="elem-desc">Brain mask calculated on the BOLD signal (red contour), along with the masks used for a/tCompCor.<br />The aCompCor mask (magenta contour) is a conservative CSF and white-matter mask for extracting physiological and movement confounds. <br />The fCompCor mask (blue contour) contains the top 5% most variable voxels within a heavily-eroded brain-mask.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-02_rois.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-02_rois.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-02_rois.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-02_rois.svg</a>
+                            </div>
+<h3 class="elem-title">EPI to T1 registration</h3><p class="elem-desc"><code>bbregister</code> was used to generate transformations from EPI-space to T1w-space. Note that Nearest Neighbor interpolation is used in the reportlets in order to highlight potential spin-history and other artifacts, whereas final images are resampled using Lanczos interpolation.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-02_bbregister.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-02_bbregister.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-02_bbregister.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-02_bbregister.svg</a>
+                            </div>
+<h3 class="elem-title">BOLD Summary</h3><p class="elem-desc">Summary statistics are plotted, which may reveal trends or artifacts in the BOLD data. Global signals calculated within the whole-brain (GS), within the white-matter (WM) and within cerebro-spinal fluid (CSF) show the mean BOLD signal in their corresponding masks. DVARS and FD show the standardized DVARS and framewise-displacement measures for each time point.<br />A carpet plot shows the time series for all voxels within the brain mask. Voxels are grouped into cortical (blue), and subcortical (orange) gray matter, cerebellum (green) and white matter and CSF (red), indicated by the color map on the left-hand side.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-02_carpetplot.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-02_carpetplot.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-02_carpetplot.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-02_carpetplot.svg</a>
+                            </div>
+            </div>
             <div id="task-simon_run-03">
                 <h2 class="run-title">Reports for  Task: simon Run: 03</h2>
-<h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
-			<p class="elem-desc">The qform has been copied from sform.</p>            </div>
+<h3 class="elem-title">Summary</h3>
+		<ul class="elem-desc">
+			<li>Repetition time (TR): 2s</li>
+			<li>Phase-encoding (PE) direction: Anterior-Posterior</li>
+			<li>Slice timing correction: Applied</li>
+			<li>Susceptibility distortion correction: None</li>
+			<li>Registration: FreeSurfer <code>bbregister</code> (boundary-based registration, BBR) - 6 dof</li>
+			<li>Functional series resampled to spaces: fsaverage5, template</li>
+			<li>Confounds collected: csf, white_matter, global_signal, std_dvars, dvars, framewise_displacement, t_comp_cor_00, t_comp_cor_01, t_comp_cor_02, t_comp_cor_03, t_comp_cor_04, t_comp_cor_05, a_comp_cor_00, a_comp_cor_01, a_comp_cor_02, a_comp_cor_03, a_comp_cor_04, a_comp_cor_05, cosine00, cosine01, cosine02, cosine03, cosine04, cosine05, cosine06, cosine07, cosine08, cosine09, cosine10, cosine11, non_steady_state_outlier00, trans_x, trans_y, trans_z, rot_x, rot_y, rot_z</li>
+		</ul><h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
+			<p class="elem-desc">The qform has been copied from sform.</p><h3 class="elem-title">ROIs in BOLD space</h3><p class="elem-desc">Brain mask calculated on the BOLD signal (red contour), along with the masks used for a/tCompCor.<br />The aCompCor mask (magenta contour) is a conservative CSF and white-matter mask for extracting physiological and movement confounds. <br />The fCompCor mask (blue contour) contains the top 5% most variable voxels within a heavily-eroded brain-mask.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-03_rois.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-03_rois.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-03_rois.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-03_rois.svg</a>
+                            </div>
+<h3 class="elem-title">EPI to T1 registration</h3><p class="elem-desc"><code>bbregister</code> was used to generate transformations from EPI-space to T1w-space. Note that Nearest Neighbor interpolation is used in the reportlets in order to highlight potential spin-history and other artifacts, whereas final images are resampled using Lanczos interpolation.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-03_bbregister.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-03_bbregister.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-03_bbregister.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-03_bbregister.svg</a>
+                            </div>
+<h3 class="elem-title">BOLD Summary</h3><p class="elem-desc">Summary statistics are plotted, which may reveal trends or artifacts in the BOLD data. Global signals calculated within the whole-brain (GS), within the white-matter (WM) and within cerebro-spinal fluid (CSF) show the mean BOLD signal in their corresponding masks. DVARS and FD show the standardized DVARS and framewise-displacement measures for each time point.<br />A carpet plot shows the time series for all voxels within the brain mask. Voxels are grouped into cortical (blue), and subcortical (orange) gray matter, cerebellum (green) and white matter and CSF (red), indicated by the color map on the left-hand side.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-03_carpetplot.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-03_carpetplot.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-03_carpetplot.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-03_carpetplot.svg</a>
+                            </div>
+            </div>
             <div id="task-simon_run-04">
                 <h2 class="run-title">Reports for  Task: simon Run: 04</h2>
-<h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
-			<p class="elem-desc">The qform has been copied from sform.</p>            </div>
+<h3 class="elem-title">Summary</h3>
+		<ul class="elem-desc">
+			<li>Repetition time (TR): 2s</li>
+			<li>Phase-encoding (PE) direction: Anterior-Posterior</li>
+			<li>Slice timing correction: Applied</li>
+			<li>Susceptibility distortion correction: None</li>
+			<li>Registration: FreeSurfer <code>bbregister</code> (boundary-based registration, BBR) - 6 dof</li>
+			<li>Functional series resampled to spaces: fsaverage5, template</li>
+			<li>Confounds collected: csf, white_matter, global_signal, std_dvars, dvars, framewise_displacement, t_comp_cor_00, t_comp_cor_01, t_comp_cor_02, t_comp_cor_03, t_comp_cor_04, t_comp_cor_05, a_comp_cor_00, a_comp_cor_01, a_comp_cor_02, a_comp_cor_03, a_comp_cor_04, a_comp_cor_05, cosine00, cosine01, cosine02, cosine03, cosine04, cosine05, cosine06, cosine07, cosine08, cosine09, cosine10, cosine11, non_steady_state_outlier00, non_steady_state_outlier01, trans_x, trans_y, trans_z, rot_x, rot_y, rot_z</li>
+		</ul><h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
+			<p class="elem-desc">The qform has been copied from sform.</p><h3 class="elem-title">ROIs in BOLD space</h3><p class="elem-desc">Brain mask calculated on the BOLD signal (red contour), along with the masks used for a/tCompCor.<br />The aCompCor mask (magenta contour) is a conservative CSF and white-matter mask for extracting physiological and movement confounds. <br />The fCompCor mask (blue contour) contains the top 5% most variable voxels within a heavily-eroded brain-mask.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-04_rois.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-04_rois.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-04_rois.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-04_rois.svg</a>
+                            </div>
+<h3 class="elem-title">EPI to T1 registration</h3><p class="elem-desc"><code>bbregister</code> was used to generate transformations from EPI-space to T1w-space. Note that Nearest Neighbor interpolation is used in the reportlets in order to highlight potential spin-history and other artifacts, whereas final images are resampled using Lanczos interpolation.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-04_bbregister.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-04_bbregister.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-04_bbregister.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-04_bbregister.svg</a>
+                            </div>
+<h3 class="elem-title">BOLD Summary</h3><p class="elem-desc">Summary statistics are plotted, which may reveal trends or artifacts in the BOLD data. Global signals calculated within the whole-brain (GS), within the white-matter (WM) and within cerebro-spinal fluid (CSF) show the mean BOLD signal in their corresponding masks. DVARS and FD show the standardized DVARS and framewise-displacement measures for each time point.<br />A carpet plot shows the time series for all voxels within the brain mask. Voxels are grouped into cortical (blue), and subcortical (orange) gray matter, cerebellum (green) and white matter and CSF (red), indicated by the color map on the left-hand side.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-04_carpetplot.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-04_carpetplot.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-04_carpetplot.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-04_carpetplot.svg</a>
+                            </div>
+            </div>
             <div id="task-simon_run-05">
                 <h2 class="run-title">Reports for  Task: simon Run: 05</h2>
-<h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
-			<p class="elem-desc">The qform has been copied from sform.</p>            </div>
+<h3 class="elem-title">Summary</h3>
+		<ul class="elem-desc">
+			<li>Repetition time (TR): 2s</li>
+			<li>Phase-encoding (PE) direction: Anterior-Posterior</li>
+			<li>Slice timing correction: Applied</li>
+			<li>Susceptibility distortion correction: None</li>
+			<li>Registration: FreeSurfer <code>bbregister</code> (boundary-based registration, BBR) - 6 dof</li>
+			<li>Functional series resampled to spaces: fsaverage5, template</li>
+			<li>Confounds collected: csf, white_matter, global_signal, std_dvars, dvars, framewise_displacement, t_comp_cor_00, t_comp_cor_01, t_comp_cor_02, t_comp_cor_03, t_comp_cor_04, t_comp_cor_05, a_comp_cor_00, a_comp_cor_01, a_comp_cor_02, a_comp_cor_03, a_comp_cor_04, a_comp_cor_05, cosine00, cosine01, cosine02, cosine03, cosine04, cosine05, cosine06, cosine07, cosine08, cosine09, cosine10, cosine11, non_steady_state_outlier00, non_steady_state_outlier01, trans_x, trans_y, trans_z, rot_x, rot_y, rot_z</li>
+		</ul><h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
+			<p class="elem-desc">The qform has been copied from sform.</p><h3 class="elem-title">ROIs in BOLD space</h3><p class="elem-desc">Brain mask calculated on the BOLD signal (red contour), along with the masks used for a/tCompCor.<br />The aCompCor mask (magenta contour) is a conservative CSF and white-matter mask for extracting physiological and movement confounds. <br />The fCompCor mask (blue contour) contains the top 5% most variable voxels within a heavily-eroded brain-mask.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-05_rois.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-05_rois.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-05_rois.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-05_rois.svg</a>
+                            </div>
+<h3 class="elem-title">EPI to T1 registration</h3><p class="elem-desc"><code>bbregister</code> was used to generate transformations from EPI-space to T1w-space. Note that Nearest Neighbor interpolation is used in the reportlets in order to highlight potential spin-history and other artifacts, whereas final images are resampled using Lanczos interpolation.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-05_bbregister.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-05_bbregister.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-05_bbregister.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-05_bbregister.svg</a>
+                            </div>
+<h3 class="elem-title">BOLD Summary</h3><p class="elem-desc">Summary statistics are plotted, which may reveal trends or artifacts in the BOLD data. Global signals calculated within the whole-brain (GS), within the white-matter (WM) and within cerebro-spinal fluid (CSF) show the mean BOLD signal in their corresponding masks. DVARS and FD show the standardized DVARS and framewise-displacement measures for each time point.<br />A carpet plot shows the time series for all voxels within the brain mask. Voxels are grouped into cortical (blue), and subcortical (orange) gray matter, cerebellum (green) and white matter and CSF (red), indicated by the color map on the left-hand side.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-05_carpetplot.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-05_carpetplot.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-05_carpetplot.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-05_carpetplot.svg</a>
+                            </div>
+            </div>
             <div id="task-simon_run-06">
                 <h2 class="run-title">Reports for  Task: simon Run: 06</h2>
-<h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
-			<p class="elem-desc">The qform has been copied from sform.</p>            </div>
+<h3 class="elem-title">Summary</h3>
+		<ul class="elem-desc">
+			<li>Repetition time (TR): 2s</li>
+			<li>Phase-encoding (PE) direction: Anterior-Posterior</li>
+			<li>Slice timing correction: Applied</li>
+			<li>Susceptibility distortion correction: None</li>
+			<li>Registration: FreeSurfer <code>bbregister</code> (boundary-based registration, BBR) - 6 dof</li>
+			<li>Functional series resampled to spaces: fsaverage5, template</li>
+			<li>Confounds collected: csf, white_matter, global_signal, std_dvars, dvars, framewise_displacement, t_comp_cor_00, t_comp_cor_01, t_comp_cor_02, t_comp_cor_03, t_comp_cor_04, t_comp_cor_05, a_comp_cor_00, a_comp_cor_01, a_comp_cor_02, a_comp_cor_03, a_comp_cor_04, a_comp_cor_05, cosine00, cosine01, cosine02, cosine03, cosine04, cosine05, cosine06, cosine07, cosine08, cosine09, cosine10, cosine11, non_steady_state_outlier00, trans_x, trans_y, trans_z, rot_x, rot_y, rot_z</li>
+		</ul><h3 class="elem-title">Note on orientation: qform matrix overwritten</h3>
+			<p class="elem-desc">The qform has been copied from sform.</p><h3 class="elem-title">ROIs in BOLD space</h3><p class="elem-desc">Brain mask calculated on the BOLD signal (red contour), along with the masks used for a/tCompCor.<br />The aCompCor mask (magenta contour) is a conservative CSF and white-matter mask for extracting physiological and movement confounds. <br />The fCompCor mask (blue contour) contains the top 5% most variable voxels within a heavily-eroded brain-mask.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-06_rois.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-06_rois.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-06_rois.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-06_rois.svg</a>
+                            </div>
+<h3 class="elem-title">EPI to T1 registration</h3><p class="elem-desc"><code>bbregister</code> was used to generate transformations from EPI-space to T1w-space. Note that Nearest Neighbor interpolation is used in the reportlets in order to highlight potential spin-history and other artifacts, whereas final images are resampled using Lanczos interpolation.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-06_bbregister.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-06_bbregister.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-06_bbregister.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-06_bbregister.svg</a>
+                            </div>
+<h3 class="elem-title">BOLD Summary</h3><p class="elem-desc">Summary statistics are plotted, which may reveal trends or artifacts in the BOLD data. Global signals calculated within the whole-brain (GS), within the white-matter (WM) and within cerebro-spinal fluid (CSF) show the mean BOLD signal in their corresponding masks. DVARS and FD show the standardized DVARS and framewise-displacement measures for each time point.<br />A carpet plot shows the time series for all voxels within the brain mask. Voxels are grouped into cortical (blue), and subcortical (orange) gray matter, cerebellum (green) and white matter and CSF (red), indicated by the color map on the left-hand side.<p>                            <div class="elem-image">
+                            <object class="svg-reportlet" type="image/svg+xml" data="./sub-01/figures/sub-01_task-simon_run-06_carpetplot.svg">
+                            Problem loading figure sub-01/figures/sub-01_task-simon_run-06_carpetplot.svg. If the link below works, please try reloading the report in your browser.</object>
+                            </div>
+                            <div class="elem-filename">
+                                Get figure file: <a href="./sub-01/figures/sub-01_task-simon_run-06_carpetplot.svg" target="_blank">sub-01/figures/sub-01_task-simon_run-06_carpetplot.svg</a>
+                            </div>
+            </div>
     </div>
     <div id="About">
     <h1 class="sub-report-title">About</h1>
 <ul>
 		<li>FMRIPrep version: 1.3.2</li>
-		<li>FMRIPrep command: <code>/usr/local/miniconda/bin/fmriprep /base /out participant</code></li>
-		<li>Date preprocessed: 2019-04-14 04:07:58 +0000</li>
+		<li>FMRIPrep command: <code>/usr/local/miniconda/bin/fmriprep /data /out participant</code></li>
+		<li>Date preprocessed: 2019-05-01 23:20:36 +0000</li>
 	</ul>
 </div>    </div>
 
@@ -736,448 +934,7 @@ section corresponding to workflows in \emph{fMRIPrep}'s documentation}.
 <div id="errors">
     <h1 class="sub-report-title">Errors</h1>
     <ul>
-        <li>
-        <div class="nipype_error">
-            Node Name: <a target="_self" onclick="toggle('/out/fmriprep/sub-01/log/20190414-040119_ce9d2642-83a9-49d4-b2a0-ea39ee95ff1f/crash-20190414-061209-root-autorecon1-4dee7113-8a07-4a4d-a482-6428e584010dtxt_details_id');">fmriprep_wf.single_subject_01_wf.anat_preproc_wf.surface_recon_wf.autorecon1</a><br>
-            <div id="/out/fmriprep/sub-01/log/20190414-040119_ce9d2642-83a9-49d4-b2a0-ea39ee95ff1f/crash-20190414-061209-root-autorecon1-4dee7113-8a07-4a4d-a482-6428e584010dtxt_details_id" style="display:none">
-            File: <code>/out/fmriprep/sub-01/log/20190414-040119_ce9d2642-83a9-49d4-b2a0-ea39ee95ff1f/crash-20190414-061209-root-autorecon1-4dee7113-8a07-4a4d-a482-6428e584010d.txt</code><br>
-            Working Directory: <code>/tmp/work/fmriprep_wf/single_subject_01_wf/anat_preproc_wf/surface_recon_wf/autorecon1</code><br>
-            Inputs: <br>
-            <ul>
-                <li>FLAIR_file: <code><undefined></code></li>
-                <li>T1_files: <code>['/base/sub-01/anat/sub-01_T1w.nii.gz']</code></li>
-                <li>T2_file: <code><undefined></code></li>
-                <li>args: <code><undefined></code></li>
-                <li>big_ventricles: <code><undefined></code></li>
-                <li>brainstem: <code><undefined></code></li>
-                <li>directive: <code>autorecon1</code></li>
-                <li>environ: <code>{}</code></li>
-                <li>expert: <code><undefined></code></li>
-                <li>flags: <code>['-noskullstrip']</code></li>
-                <li>hemi: <code><undefined></code></li>
-                <li>hippocampal_subfields_T1: <code><undefined></code></li>
-                <li>hippocampal_subfields_T2: <code><undefined></code></li>
-                <li>hires: <code>False</code></li>
-                <li>mprage: <code><undefined></code></li>
-                <li>mri_aparc2aseg: <code><undefined></code></li>
-                <li>mri_ca_label: <code><undefined></code></li>
-                <li>mri_ca_normalize: <code><undefined></code></li>
-                <li>mri_ca_register: <code><undefined></code></li>
-                <li>mri_edit_wm_with_aseg: <code><undefined></code></li>
-                <li>mri_em_register: <code><undefined></code></li>
-                <li>mri_fill: <code><undefined></code></li>
-                <li>mri_mask: <code><undefined></code></li>
-                <li>mri_normalize: <code><undefined></code></li>
-                <li>mri_pretess: <code><undefined></code></li>
-                <li>mri_remove_neck: <code><undefined></code></li>
-                <li>mri_segment: <code><undefined></code></li>
-                <li>mri_segstats: <code><undefined></code></li>
-                <li>mri_tessellate: <code><undefined></code></li>
-                <li>mri_watershed: <code><undefined></code></li>
-                <li>mris_anatomical_stats: <code><undefined></code></li>
-                <li>mris_ca_label: <code><undefined></code></li>
-                <li>mris_fix_topology: <code><undefined></code></li>
-                <li>mris_inflate: <code><undefined></code></li>
-                <li>mris_make_surfaces: <code><undefined></code></li>
-                <li>mris_register: <code><undefined></code></li>
-                <li>mris_smooth: <code><undefined></code></li>
-                <li>mris_sphere: <code><undefined></code></li>
-                <li>mris_surf2vol: <code><undefined></code></li>
-                <li>mrisp_paint: <code><undefined></code></li>
-                <li>openmp: <code>3</code></li>
-                <li>parallel: <code><undefined></code></li>
-                <li>subject_id: <code>sub-01</code></li>
-                <li>subjects_dir: <code>/out/freesurfer</code></li>
-                <li>talairach: <code><undefined></code></li>
-                <li>use_FLAIR: <code><undefined></code></li>
-                <li>use_T2: <code><undefined></code></li>
-                <li>xopts: <code><undefined></code></li>
-            </ul>
-            <pre>Traceback (most recent call last):
-  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/plugins/multiproc.py", line 69, in run_node
-    result['result'] = node.run(updatehash=updatehash)
-  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 473, in run
-    result = self._run_interface(execute=True)
-  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 557, in _run_interface
-    return self._run_command(execute)
-  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/pipeline/engine/nodes.py", line 637, in _run_command
-    result = self._interface.run(cwd=outdir)
-  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 375, in run
-    runtime = self._run_interface(runtime)
-  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 758, in _run_interface
-    self.raise_exception(runtime)
-  File "/usr/local/miniconda/lib/python3.7/site-packages/nipype/interfaces/base/core.py", line 695, in raise_exception
-    ).format(**runtime.dictcopy()))
-RuntimeError: Command:
-recon-all -autorecon1 -i /base/sub-01/anat/sub-01_T1w.nii.gz -noskullstrip -openmp 3 -subjid sub-01 -sd /out/freesurfer
-Standard output:
-Subject Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.1-f53a55a
-Current Stamp: freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.1-f53a55a
-INFO: SUBJECTS_DIR is /out/freesurfer
-Actual FREESURFER_HOME /opt/freesurfer
-Linux ed4792d592f0 4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
-'/opt/freesurfer/bin/recon-all' -> '/out/freesurfer/sub-01/scripts/recon-all.local-copy'
-/out/freesurfer/sub-01
-
- mri_convert /base/sub-01/anat/sub-01_T1w.nii.gz /out/freesurfer/sub-01/mri/orig/001.mgz 
-
-mri_convert.bin /base/sub-01/anat/sub-01_T1w.nii.gz /out/freesurfer/sub-01/mri/orig/001.mgz 
-$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
-reading from /base/sub-01/anat/sub-01_T1w.nii.gz...
-TR=1900.00, TE=0.00, TI=0.00, flip angle=0.00
-i_ras = (1, 0, 0)
-j_ras = (0, 1, 0)
-k_ras = (0, 0, 1)
-writing to /out/freesurfer/sub-01/mri/orig/001.mgz...
-#--------------------------------------------
-#@# MotionCor Sun Apr 14 06:08:08 UTC 2019
-Found 1 runs
-/out/freesurfer/sub-01/mri/orig/001.mgz
-Checking for (invalid) multi-frame inputs...
-WARNING: only one run found. This is OK, but motion
-correction cannot be performed on one run, so I'll
-copy the run to rawavg and continue.
-
- cp /out/freesurfer/sub-01/mri/orig/001.mgz /out/freesurfer/sub-01/mri/rawavg.mgz 
-
-/out/freesurfer/sub-01
-
- mri_convert /out/freesurfer/sub-01/mri/rawavg.mgz /out/freesurfer/sub-01/mri/orig.mgz --conform 
-
-mri_convert.bin /out/freesurfer/sub-01/mri/rawavg.mgz /out/freesurfer/sub-01/mri/orig.mgz --conform 
-$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
-reading from /out/freesurfer/sub-01/mri/rawavg.mgz...
-TR=1900.00, TE=0.00, TI=0.00, flip angle=0.00
-i_ras = (1, 0, 0)
-j_ras = (0, 1, 0)
-k_ras = (0, 0, 1)
-changing data type from float to uchar (noscale = 0)...
-MRIchangeType: Building histogram 
-Reslicing using trilinear interpolation 
-writing to /out/freesurfer/sub-01/mri/orig.mgz...
-
- mri_add_xform_to_header -c /out/freesurfer/sub-01/mri/transforms/talairach.xfm /out/freesurfer/sub-01/mri/orig.mgz /out/freesurfer/sub-01/mri/orig.mgz 
-
-INFO: extension is mgz
-#--------------------------------------------
-#@# Talairach Sun Apr 14 06:08:18 UTC 2019
-/out/freesurfer/sub-01/mri
-
- mri_nu_correct.mni --no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 50 
-
-/out/freesurfer/sub-01/mri
-/opt/freesurfer/bin/mri_nu_correct.mni
---no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 50
-nIters 1
-$Id: mri_nu_correct.mni,v 1.27 2016/02/26 16:19:49 mreuter Exp $
-Linux ed4792d592f0 4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
-Sun Apr 14 06:08:18 UTC 2019
-Program nu_correct, built from:
-Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
-/usr/bin/bc
-tmpdir is ./tmp.mri_nu_correct.mni.45916
-/out/freesurfer/sub-01/mri
-mri_convert orig.mgz ./tmp.mri_nu_correct.mni.45916/nu0.mnc -odt float
-mri_convert.bin orig.mgz ./tmp.mri_nu_correct.mni.45916/nu0.mnc -odt float 
-$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
-reading from orig.mgz...
-TR=1900.00, TE=0.00, TI=0.00, flip angle=0.00
-i_ras = (-1, 0, 0)
-j_ras = (0, 0, -1)
-k_ras = (0, 1, 0)
-changing data type from uchar to float (noscale = 0)...
-writing to ./tmp.mri_nu_correct.mni.45916/nu0.mnc...
- 
---------------------------------------------------------
-Iteration 1 Sun Apr 14 06:08:21 UTC 2019
-nu_correct -clobber ./tmp.mri_nu_correct.mni.45916/nu0.mnc ./tmp.mri_nu_correct.mni.45916/nu1.mnc -tmpdir ./tmp.mri_nu_correct.mni.45916/0/ -iterations 1000 -distance 50
-[root@ed4792d592f0:/out/freesurfer/sub-01/mri/] [2019-04-14 06:08:21] running:
-  /opt/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 1000 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 50 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.45916/0/ ./tmp.mri_nu_correct.mni.45916/nu0.mnc ./tmp.mri_nu_correct.mni.45916/nu1.imp
-
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Number of iterations: 43 
-CV of field change: 0.000984816
- 
- 
- 
-mri_convert ./tmp.mri_nu_correct.mni.45916/nu1.mnc orig_nu.mgz --like orig.mgz --conform
-mri_convert.bin ./tmp.mri_nu_correct.mni.45916/nu1.mnc orig_nu.mgz --like orig.mgz --conform 
-$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
-reading from ./tmp.mri_nu_correct.mni.45916/nu1.mnc...
-TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
-i_ras = (-1, 0, 0)
-j_ras = (0, 0, -1)
-k_ras = (0, 1, 0)
-INFO: transform src into the like-volume: orig.mgz
-changing data type from float to uchar (noscale = 0)...
-MRIchangeType: Building histogram 
-writing to orig_nu.mgz...
- 
- 
-Sun Apr 14 06:09:38 UTC 2019
-mri_nu_correct.mni done
-
- talairach_avi --i orig_nu.mgz --xfm transforms/talairach.auto.xfm 
-
-talairach_avi log file is transforms/talairach_avi.log...
-Started at Sun Apr 14 06:09:39 UTC 2019
-Ended   at Sun Apr 14 06:10:03 UTC 2019
-talairach_avi done
-
- cp transforms/talairach.auto.xfm transforms/talairach.xfm 
-
-#--------------------------------------------
-#@# Talairach Failure Detection Sun Apr 14 06:10:05 UTC 2019
-/out/freesurfer/sub-01/mri
-
- talairach_afd -T 0.005 -xfm transforms/talairach.xfm 
-
-talairach_afd: Talairach Transform: transforms/talairach.xfm OK (p=0.6875, pval=0.4932 >= threshold=0.0050)
-
- awk -f /opt/freesurfer/bin/extract_talairach_avi_QA.awk /out/freesurfer/sub-01/mri/transforms/talairach_avi.log 
-
-
- tal_QC_AZS /out/freesurfer/sub-01/mri/transforms/talairach_avi.log 
-
-TalAviQA: 0.97823
-z-score: 0
-#--------------------------------------------
-#@# Nu Intensity Correction Sun Apr 14 06:10:05 UTC 2019
-
- mri_nu_correct.mni --i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2 
-
-/out/freesurfer/sub-01/mri
-/opt/freesurfer/bin/mri_nu_correct.mni
---i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2
-nIters 2
-$Id: mri_nu_correct.mni,v 1.27 2016/02/26 16:19:49 mreuter Exp $
-Linux ed4792d592f0 4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
-Sun Apr 14 06:10:05 UTC 2019
-Program nu_correct, built from:
-Package MNI N3, version 1.12.0, compiled by nicks@terrier (x86_64-unknown-linux-gnu) on 2015-06-19 at 01:25:34
-/usr/bin/bc
-tmpdir is ./tmp.mri_nu_correct.mni.46686
-/out/freesurfer/sub-01/mri
-mri_convert orig.mgz ./tmp.mri_nu_correct.mni.46686/nu0.mnc -odt float
-mri_convert.bin orig.mgz ./tmp.mri_nu_correct.mni.46686/nu0.mnc -odt float 
-$Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $
-reading from orig.mgz...
-TR=1900.00, TE=0.00, TI=0.00, flip angle=0.00
-i_ras = (-1, 0, 0)
-j_ras = (0, 0, -1)
-k_ras = (0, 1, 0)
-changing data type from uchar to float (noscale = 0)...
-writing to ./tmp.mri_nu_correct.mni.46686/nu0.mnc...
- 
---------------------------------------------------------
-Iteration 1 Sun Apr 14 06:10:08 UTC 2019
-nu_correct -clobber ./tmp.mri_nu_correct.mni.46686/nu0.mnc ./tmp.mri_nu_correct.mni.46686/nu1.mnc -tmpdir ./tmp.mri_nu_correct.mni.46686/0/
-[root@ed4792d592f0:/out/freesurfer/sub-01/mri/] [2019-04-14 06:10:08] running:
-  /opt/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 50 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 200 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.46686/0/ ./tmp.mri_nu_correct.mni.46686/nu0.mnc ./tmp.mri_nu_correct.mni.46686/nu1.imp
-
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Processing:.................................................................Done
-Number of iterations: 50 
-CV of field change: 3.18464e+17
-Volume has invalid min and max voxel value
- 
- 
---------------------------------------------------------
-Iteration 2 Sun Apr 14 06:11:18 UTC 2019
-nu_correct -clobber ./tmp.mri_nu_correct.mni.46686/nu1.mnc ./tmp.mri_nu_correct.mni.46686/nu2.mnc -tmpdir ./tmp.mri_nu_correct.mni.46686/1/
-[root@ed4792d592f0:/out/freesurfer/sub-01/mri/] [2019-04-14 06:11:18] running:
-  /opt/freesurfer/mni/bin/nu_estimate_np_and_em -parzen -log -sharpen 0.15 0.01 -iterations 50 -stop 0.001 -shrink 4 -auto_mask -nonotify -b_spline 1.0e-7 -distance 200 -quiet -execute -clobber -nokeeptmp -tmpdir ./tmp.mri_nu_correct.mni.46686/1/ ./tmp.mri_nu_correct.mni.46686/nu1.mnc ./tmp.mri_nu_correct.mni.46686/nu2.imp
-
-Processing:.................................................................Done
-Number of iterations: 1 
-CV of field change: 0
- 
- 
- 
-mri_binarize --i ./tmp.mri_nu_correct.mni.46686/nu2.mnc --min -1 --o ./tmp.mri_nu_correct.mni.46686/ones.mgz
-WARNING: 13793944 NaNs found in volume ./tmp.mri_nu_correct.mni.46686/nu2.mnc...
-
-
-$Id: mri_binarize.c,v 1.43 2016/06/09 20:46:21 greve Exp $
-cwd /out/freesurfer/sub-01/mri
-cmdline mri_binarize.bin --i ./tmp.mri_nu_correct.mni.46686/nu2.mnc --min -1 --o ./tmp.mri_nu_correct.mni.46686/ones.mgz 
-sysname  Linux
-hostname ed4792d592f0
-machine  x86_64
-user     root
-
-input      ./tmp.mri_nu_correct.mni.46686/nu2.mnc
-frame      0
-nErode3d   0
-nErode2d   0
-output     ./tmp.mri_nu_correct.mni.46686/ones.mgz
-Binarizing based on threshold
-min        -1
-max        +infinity
-binval        1
-binvalnot     0
-fstart = 0, fend = 0, nframes = 1
-Found 16777216 values in range
-Counting number of voxels in first frame
-Found 16777216 voxels in final mask
-Count: 16777216 16777216.000000 16777216 100.000000
-mri_binarize done
-mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.46686/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.46686/sum.junk --avgwf ./tmp.mri_nu_correct.mni.46686/input.mean.dat
-
-$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
-cwd 
-cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.46686/ones.mgz --i orig.mgz --sum ./tmp.mri_nu_correct.mni.46686/sum.junk --avgwf ./tmp.mri_nu_correct.mni.46686/input.mean.dat 
-sysname  Linux
-hostname ed4792d592f0
-machine  x86_64
-user     root
-UseRobust  0
-Loading ./tmp.mri_nu_correct.mni.46686/ones.mgz
-Loading orig.mgz
-Voxel Volume is 1 mm^3
-Generating list of segmentation ids
-Found   1 segmentations
-Computing statistics for each segmentation
-
-Reporting on   1 segmentations
-Using PrintSegStat
-Computing spatial average of each frame
-  0
-Writing to ./tmp.mri_nu_correct.mni.46686/input.mean.dat
-mri_segstats done
-mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.46686/ones.mgz --i ./tmp.mri_nu_correct.mni.46686/nu2.mnc --sum ./tmp.mri_nu_correct.mni.46686/sum.junk --avgwf ./tmp.mri_nu_correct.mni.46686/output.mean.dat
-
-$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
-cwd 
-cmdline mri_segstats --id 1 --seg ./tmp.mri_nu_correct.mni.46686/ones.mgz --i ./tmp.mri_nu_correct.mni.46686/nu2.mnc --sum ./tmp.mri_nu_correct.mni.46686/sum.junk --avgwf ./tmp.mri_nu_correct.mni.46686/output.mean.dat 
-sysname  Linux
-hostname ed4792d592f0
-machine  x86_64
-user     root
-UseRobust  0
-Loading ./tmp.mri_nu_correct.mni.46686/ones.mgz
-Loading ./tmp.mri_nu_correct.mni.46686/nu2.mnc
-WARNING: 13793944 NaNs found in volume ./tmp.mri_nu_correct.mni.46686/nu2.mnc...
-
-Voxel Volume is 1 mm^3
-Generating list of segmentation ids
-Found   1 segmentations
-Computing statistics for each segmentation
-
-Reporting on   1 segmentations
-Using PrintSegStat
-Computing spatial average of each frame
-  0
-Writing to ./tmp.mri_nu_correct.mni.46686/output.mean.dat
-mri_segstats done
-Runtime error (func=(main), adr=19): Divide by zero
-mris_calc -o ./tmp.mri_nu_correct.mni.46686/nu2.mnc ./tmp.mri_nu_correct.mni.46686/nu2.mnc mul
-WARNING: 13793944 NaNs found in volume ./tmp.mri_nu_correct.mni.46686/nu2.mnc...
-
-Segmentation fault 
-Linux ed4792d592f0 4.9.125-linuxkit #1 SMP Fri Sep 7 08:20:28 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
-
-recon-all -s sub-01 exited with ERRORS at Sun Apr 14 06:12:08 UTC 2019
-
-For more details, see the log file /out/freesurfer/sub-01/scripts/recon-all.log
-To report a problem, see http://surfer.nmr.mgh.harvard.edu/fswiki/BugReporting
-
-Standard error:
-
-Return code: 1</pre>
-            </div>
-        </div>
-        </li>
+        <li>No errors to report!</li>
     </ul>
 </div>
 
